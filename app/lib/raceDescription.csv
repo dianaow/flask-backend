@@ -1,61 +1,42 @@
-season,raceName,Supersoft,Soft,Medium,Hard,Ultrasoft,weather
-2016,Australian Grand Prix,1,1,1,0,0,Dry
-2016,Bahrain Grand Prix,1,1,1,0,0,Dry
-2016,Chinese Grand Prix,1,1,1,0,0,Dry
-2016,Russian Grand Prix,1,1,1,0,0,Dry
-2016,Spanish Grand Prix,0,1,1,1,0,Dry
-2016,Monaco Grand Prix,1,1,0,0,1,Varied
-2016,Canadian Grand Prix,1,1,0,0,1,Dry
-2016,Azerbaijan Grand Prix,1,1,1,0,0,Dry
-2016,Austrian Grand Prix,1,1,0,0,1,Dry
-2016,British Grand Prix,0,1,1,1,0,Varied
-2016,Hungarian Grand Prix,1,1,1,0,0,Dry
-2016,German Grand Prix,1,1,1,0,0,Dry
-2016,Italian Grand Prix,1,1,1,0,0,Dry
-2016,Belgian Grand Prix,1,1,1,0,0,Dry
-2016,Singapore Grand Prix,1,1,0,0,1,Dry
-2016,Malaysian Grand Prix,0,1,1,1,0,Dry
-2016,Japanese Grand Prix,0,1,1,1,0,Dry
-2016,United States Grand Prix,1,1,1,0,0,Dry
-2016,Mexican Grand Prix,1,1,1,0,0,Dry
-2016,Brazilian Grand Prix,0,1,1,1,0,Wet
-2016,Abu Dhabi Grand Prix,1,1,0,0,1,Dry
-2015,Australian Grand Prix,0,1,1,0,0,Dry
-2015,Malaysian Grand Prix,0,0,1,1,0,Dry
-2015,Chinese Grand Prix,0,1,1,0,0,Dry
-2015,Bahrain Grand Prix,0,1,1,0,0,Dry
-2015,Spanish Grand Prix,0,0,1,1,0,Dry
-2015,Monaco Grand Prix,1,1,0,0,0,Dry
-2015,Canadian Grand Prix,1,1,0,0,0,Dry
-2015,Austrian Grand Prix,1,1,0,0,0,Dry
-2015,British Grand Prix,0,0,1,1,0,Varied
-2015,Hungarian Grand Prix,0,1,1,0,0,Dry
-2015,Belgian Grand Prix,0,1,1,0,0,Dry
-2015,Italian Grand Prix,0,1,1,0,0,Dry
-2015,Singapore Grand Prix,1,1,0,0,0,Dry
-2015,Japanese Grand Prix,0,0,1,1,0,Dry
-2015,Russian Grand Prix,1,1,0,0,0,Dry
-2015,United States Grand Prix,0,1,1,0,0,Varied
-2015,Mexican Grand Prix,0,1,1,0,0,Dry
-2015,Brazilian Grand Prix,0,1,1,0,0,Dry
-2015,Abu Dhabi Grand Prix,1,1,0,0,0,Dry
-2017,Australian Grand Prix,1,1,0,0,1,Dry
-2017,Chinese Grand Prix,1,1,1,0,0,Dry
-2017,Bahrain Grand Prix,1,1,1,0,0,Wet
-2017,Russian Grand Prix,1,1,0,0,1,Dry
-2017,Spanish Grand Prix,0,1,1,1,0,Dry
-2017,Monaco Grand Prix,1,1,0,0,1,Dry
-2017,Canadian Grand Prix,1,1,0,0,1,Dry
-2017,Azerbaijan Grand Prix,1,1,1,0,0,Dy
-2017,Austrian Grand Prix,1,1,0,0,1,Dry
-2017,British Grand Prix,1,1,1,0,0,Dry
-2017,Hungarian Grand Prix,1,1,1,0,0,Dry
-2017,Belgian Grand Prix,1,1,0,0,1,Dry
-2017,Italian Grand Prix,1,1,1,0,0,Dry
-2017,Singapore Grand Prix,1,1,0,0,1,Wet
-2017,Malaysian Grand Prix,1,1,1,0,0,Dry
-2017,Japanese Grand Prix,1,1,1,0,0,Dry
-2017,United States Grand Prix,1,1,0,0,1,Dry
-2017,Mexican Grand Prix,1,1,0,0,1,Dry
-2017,Brazilian Grand Prix,1,1,1,0,0,Dry
-2017,Abu Dhabi Grand Prix,1,1,0,0,1,Dry
+season,raceName,supersoft,soft,medium,hard,ultrasoft,weather,roundId,category
+2016,Australian Grand Prix,1,1,1,0,0,Dry,1,1
+2016,Bahrain Grand Prix,1,1,1,0,0,Dry,2,1
+2016,Chinese Grand Prix,1,1,1,0,0,Dry,3,1
+2016,Russian Grand Prix,1,1,1,0,0,Dry,4,1
+2016,Spanish Grand Prix,0,1,1,1,0,Dry,5,4
+2016,Monaco Grand Prix,1,1,0,0,1,Varied,6,2
+2016,Canadian Grand Prix,1,1,0,0,1,Dry,7,2
+2016,Azerbaijan Grand Prix,1,1,1,0,0,Dry,8,1
+2016,Austrian Grand Prix,1,1,0,0,1,Dry,9,2
+2016,British Grand Prix,0,1,1,1,0,Varied,10,4
+2016,Hungarian Grand Prix,1,1,1,0,0,Dry,11,1
+2016,German Grand Prix,1,1,1,0,0,Dry,12,1
+2016,Italian Grand Prix,1,1,1,0,0,Dry,13,1
+2016,Belgian Grand Prix,1,1,1,0,0,Dry,14,1
+2016,Singapore Grand Prix,1,1,0,0,1,Dry,15,2
+2016,Malaysian Grand Prix,0,1,1,1,0,Dry,16,4
+2016,Japanese Grand Prix,0,1,1,1,0,Dry,17,4
+2016,United States Grand Prix,1,1,1,0,0,Dry,18,1
+2016,Mexican Grand Prix,1,1,1,0,0,Dry,19,1
+2016,Brazilian Grand Prix,0,1,1,1,0,Wet,20,4
+2016,Abu Dhabi Grand Prix,1,1,0,0,1,Dry,21,2
+2017,Australian Grand Prix,1,1,0,0,1,Dry,1,2
+2017,Chinese Grand Prix,1,1,1,0,0,Dry,2,1
+2017,Bahrain Grand Prix,1,1,1,0,0,Wet,3,1
+2017,Russian Grand Prix,1,1,0,0,1,Dry,4,2
+2017,Spanish Grand Prix,0,1,1,1,0,Dry,5,4
+2017,Monaco Grand Prix,1,1,0,0,1,Dry,6,2
+2017,Canadian Grand Prix,1,1,0,0,1,Dry,7,2
+2017,Azerbaijan Grand Prix,1,1,1,0,0,Dy,8,1
+2017,Austrian Grand Prix,1,1,0,0,1,Dry,9,2
+2017,British Grand Prix,1,1,1,0,0,Dry,10,1
+2017,Hungarian Grand Prix,1,1,1,0,0,Dry,11,1
+2017,Belgian Grand Prix,1,1,0,0,1,Dry,12,2
+2017,Italian Grand Prix,1,1,1,0,0,Dry,13,1
+2017,Singapore Grand Prix,1,1,0,0,1,Wet,14,2
+2017,Malaysian Grand Prix,1,1,1,0,0,Dry,15,1
+2017,Japanese Grand Prix,1,1,1,0,0,Dry,16,1
+2017,United States Grand Prix,1,1,0,0,1,Dry,17,2
+2017,Mexican Grand Prix,1,1,0,0,1,Dry,18,2
+2017,Brazilian Grand Prix,1,1,1,0,0,Dry,19,1
+2017,Abu Dhabi Grand Prix,1,1,0,0,1,Dry,20,2

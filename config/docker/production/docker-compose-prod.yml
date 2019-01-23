@@ -37,18 +37,3 @@ services:
       timeout: 3s
       retries: 30
 
-  client:
-    build:
-      context: ../../../
-      dockerfile: Dockerfile-node
-    volumes:
-      - ../../../:/home/ubuntu/celery-scheduler/
-      - /home/ubuntu/celery-scheduler/node_modules
-    ports:
-      - "3000:3000"
-    command: ["npm", "run", "start"]
-    depends_on:
-      app:
-        condition: service_started
-
-

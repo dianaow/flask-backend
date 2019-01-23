@@ -4,6 +4,7 @@ from app.views import *
 from app.api.list_of_apis import *
 from app.lib.log import *
 from flask_cors import CORS
+from flask_restful import Api
 
 def create_app():
     app = Flask(__name__)
@@ -12,6 +13,9 @@ def create_app():
 
     register_blueprint(app)
     register_extension(app)
+
+    api = Api(app)
+    api.add_resource(LaptimesQuery, '/api/laptimes/<int:season>/<int:id>')
 
     with app.app_context():
         db.create_all()
@@ -24,9 +28,9 @@ def register_blueprint(app):
     app.register_blueprint(race_blueprint)
     app.register_blueprint(results_blueprint)
     app.register_blueprint(qualifying_blueprint)
-    app.register_blueprint(laptimes_blueprint)
     app.register_blueprint(pitstops_blueprint)
     app.register_blueprint(tyre_blueprint)
+    app.register_blueprint(rounded_laptimes_blueprint)
 
 def register_extension(app):
     db.init_app(app)

@@ -48,19 +48,3 @@ services:
       timeout: 3s
       retries: 5
 
-  client:
-    build:
-      context: ../../../
-      dockerfile: Dockerfile-node
-    env_file:
-      - dev-variables.env
-    volumes:
-      - ../../../:/home/ubuntu/celery-scheduler/
-      - /home/ubuntu/celery-scheduler/node_modules
-    ports:
-      - "3000:3000"
-    command: /bin/bash -c "npm run dev-build && npm run start"
-    depends_on:
-      app:
-        condition: service_started
-

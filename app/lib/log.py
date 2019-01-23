@@ -28,7 +28,7 @@ def get_tyres_archive():
 def get_results_archive():
 
     seasons = [2016, 2017]
-    races_round = range(4,6)
+    races_round = range(1,22)
     startTime = datetime.now()
     df_results, df_races = extract_to_df_race('results', seasons, races_round)
     #print(df_races.tail())
@@ -42,7 +42,7 @@ def get_results_archive():
 def get_qual_archive():
 
     seasons = [2016, 2017]
-    races_round = range(4, 6)
+    races_round = range(1,22)
     startTime = datetime.now()
     df_qualifying = extract_to_df_race('qualifying', seasons, races_round)
     #print(df_qualifying.tail())
@@ -53,8 +53,8 @@ def get_qual_archive():
 
 def get_laptimes_archive():
 
-    seasons = [2016]
-    races_round = [6,7]
+    seasons = [2017]
+    races_round = [19,20]
     startTime = datetime.now()
     df_lapTimes = extract_to_df_race('laps', seasons, races_round)
     print(df_lapTimes.tail())
@@ -65,8 +65,8 @@ def get_laptimes_archive():
 
 def get_pitstops_archive():
 
-    seasons = [2017]
-    races_round = range(4,6)
+    seasons = [2016,2017]
+    races_round = range(1,22)
     startTime = datetime.now()
     df_pitStops = extract_to_df_race('pitstops', seasons, races_round)
     #print(df_pitStops.tail())
@@ -155,12 +155,14 @@ def save_races_to_db(df_races, db_session):
         r = Race()
         r.season = df_races.loc[idx,"season"]
         r.raceName = df_races.loc[idx,"raceName"]
-        r.Supersoft = df_races.loc[idx,"Supersoft"]
-        r.Soft = df_races.loc[idx,"Soft"]
-        r.Medium = df_races.loc[idx,"Medium"]
-        r.Hard = df_races.loc[idx,"Hard"]
-        r.Ultrasoft = df_races.loc[idx,"Ultrasoft"]
+        r.supersoft = df_races.loc[idx,"supersoft"]
+        r.soft = df_races.loc[idx,"soft"]
+        r.medium = df_races.loc[idx,"medium"]
+        r.hard = df_races.loc[idx,"hard"]
+        r.ultrasoft = df_races.loc[idx,"ultrasoft"]
         r.weather = df_races.loc[idx,"weather"]
+        r.roundId = df_races.loc[idx,"roundId"]
+        r.category = df_races.loc[idx,"category"]
 
         db_session.add(r)
     try:

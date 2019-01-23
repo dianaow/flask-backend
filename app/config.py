@@ -27,7 +27,5 @@ CRON_MIN = os.getenv('CRON_MIN')
 CRON_HOUR = os.getenv('CRON_HOUR')
 CRON_DAY = os.getenv('CRON_DAY')
 
-API_SERVER_HOST = 'localhost'
+API_SERVER_HOST = '0.0.0.0'
 API_SERVER_PORT = 5000
-WEB_SERVER_HOST = 'localhost'
-WEB_SERVER_PORT = 3000

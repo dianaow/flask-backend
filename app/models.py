@@ -43,15 +43,17 @@ class Race(db.Model, MethodsMixin):
     id = db.Column(db.Integer, primary_key=True)
     season = db.Column(db.Integer)
     raceName = db.Column(db.String(50))
-    Supersoft = db.Column(db.Integer)
-    Soft = db.Column(db.Integer)
-    Medium = db.Column(db.Integer)
-    Hard = db.Column(db.Integer)
-    Ultrasoft = db.Column(db.Integer)
+    supersoft = db.Column(db.Integer)
+    soft = db.Column(db.Integer)
+    medium = db.Column(db.Integer)
+    hard = db.Column(db.Integer)
+    ultrasoft = db.Column(db.Integer)
     weather = db.Column(db.String(50))
+    roundId = db.Column(db.Integer)
+    category = db.Column(db.Integer)
 
     def __init__(self, **kwargs):
-        keys = ['id', 'season', 'raceName', 'Supersoft', 'Soft', 'Medium', 'Hard', 'Ultrasoft', 'weather']
+        keys = ['id', 'season', 'raceName', 'supersoft', 'soft', 'medium', 'hard', 'ultrasoft', 'weather', 'roundId', 'category']
         for key in keys:
             setattr(self, key, kwargs.get(key))
 
